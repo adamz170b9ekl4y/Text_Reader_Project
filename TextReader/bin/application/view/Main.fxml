@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.ReaderController">
+   <children>
+      <AnchorPane layoutX="-26.0" prefHeight="603.0" prefWidth="618.0">
+         <children>
+            <Pane layoutX="14.0" layoutY="3.0" prefHeight="600.0" prefWidth="600.0">
+               <children>
+                  <MenuBar fx:id="menubar" layoutX="14.0" layoutY="2.0" prefHeight="25.0" prefWidth="592.0">
+                    <menus>
+                      <Menu fx:id="menu1" mnemonicParsing="false" text="File">
+                           <items>
+                              <MenuItem fx:id="open" mnemonicParsing="false" onAction="#openfile" text="Open" />
+                           </items>
+                      </Menu>
+                        <Menu mnemonicParsing="false" text="Search">
+                          <items>
+                            <MenuItem fx:id="Search" mnemonicParsing="false" onAction="#callSearch" text="Find Next" />
+                          </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Options">
+                           <items>
+                              <Menu mnemonicParsing="false" text="Style">
+                                <items>
+                                  <MenuItem fx:id="Default_css" mnemonicParsing="false" onAction="#DefaultTheme" text="Default" />
+                                    <MenuItem fx:id="Dark_css" mnemonicParsing="false" onAction="#DarkMode" text="Dark-Mode" />
+                                </items>
+                              </Menu>
+                              <MenuItem fx:id="SetAppDir" mnemonicParsing="false" onAction="#SetAppDirectory" text="Set App Directory" />
+                           </items>
+                        </Menu>
+                    </menus>
+                  </MenuBar>
+                  <ListView fx:id="bigText" layoutX="44.0" layoutY="27.0" prefHeight="554.0" prefWidth="532.0" />
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

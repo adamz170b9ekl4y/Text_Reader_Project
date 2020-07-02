@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane minHeight="300.0" minWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.SearchController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="51.0" prefWidth="318.0" spacing="10.0">
+         <children>
+            <Label alignment="CENTER_RIGHT" minWidth="49.0" prefHeight="17.0" prefWidth="49.0" text="Find:" />
+            <TextField fx:id="label" prefHeight="25.0" prefWidth="153.0" HBox.hgrow="ALWAYS" />
+            <Button mnemonicParsing="false" onAction="#search" prefHeight="25.0" prefWidth="61.0" text="Search" />
+         </children>
+         <padding>
+            <Insets right="30.0" />
+         </padding>
+      </HBox>
+      <Button layoutX="226.0" layoutY="51.0" mnemonicParsing="false" onAction="#search" prefHeight="25.0" prefWidth="61.0" text="Cancel" />
+      <CheckBox fx:id="MatchCase" layoutX="14.0" layoutY="68.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="100.0" text="Match Case" />
+      <HBox layoutX="114.0" layoutY="91.0" prefHeight="39.0" prefWidth="200.0">
+         <children>
+            <RadioButton fx:id="Up_button" mnemonicParsing="false" prefHeight="17.0" prefWidth="66.0" text="Up">
+               <toggleGroup>
+                  <ToggleGroup fx:id="Direction_group" />
+               </toggleGroup></RadioButton>
+            <RadioButton fx:id="Down_button" mnemonicParsing="false" selected="true" text="Down" toggleGroup="$Direction_group" />
+         </children>
+      </HBox>
+      <Label layoutX="114.0" layoutY="68.0" text="Direction" />
+   </children>
+</AnchorPane>

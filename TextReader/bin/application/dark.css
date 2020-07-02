@@ -1,0 +1,51 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.root {
+    -fx-accent: #1e74c6;
+    -fx-focus-color: -fx-accent;
+    -fx-base: #373e43;
+}
+.list-cell{
+    -fx-font-size:15.0;
+    -fx-font-family: "Times New Roman";
+    -fx-text-fill: #BB86FC;
+}
+.list-view .list-cell:odd {
+  -fx-control-inner-background: derive(-fx-base, 15%);
+}
+
+.list-view .list-cell:even {
+   -fx-control-inner-background: derive(-fx-base, 15%);
+}
+.list-view .list-cell:selected:odd,
+.list-view .list-cell:selected:even {
+    -fx-control-inner-background: derive(-fx-base, 15%);
+}
+.menu-bar {
+    -fx-background-color: #282828;
+}
+.menu-bar .label {
+    -fx-text-fill: white;
+
+}
+.menu-bar .menu-button:hover, .menu-bar .menu-button:focused, .menu-bar .menu-button:showing {
+    -fx-background: #404040;
+    -fx-opacity: 0.5;
+    -fx-text-fill: white;
+}
+
+.menu-item {
+    -fx-text-fill: white;
+    -fx-background: #282828 ;
+}
+.menu-item .label{
+    -fx-text-fill: white;
+}
+.menu-item .label:hover{
+    -fx-background: #404040 ;
+    -fx-text-fill: white;
+}
+.context-menu {
+    -fx-background-color:#404040 ;
+    -fx-border-color: #404040
+}
+
